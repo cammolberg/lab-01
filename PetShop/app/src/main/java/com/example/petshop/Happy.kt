@@ -1,8 +1,8 @@
 package com.example.petshop
 
-class Happy(name: String, age: Int, date: String): Pet(name, age), Mood(date) {
+class Happy(date: String): Mood(date) {
 
-    override fun emotion() {
-        println("$name is happy :)")
+    override fun emotion(): String {
+        return "Today is $date and your pet is happy :)"
     }
 }
